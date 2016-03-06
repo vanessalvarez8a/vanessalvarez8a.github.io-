@@ -1,1 +1,39 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en" ng-app="furryInnApp">
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="Grid.css">
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+  <title>Furry Inn</title>
+</head>
+<body>
+
+    <div ui-view></div>
+
+
+  <footer>
+    <div class="row">
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/furryinn/?fref=ts"><i class="ion-social-facebook social-icons"></i></a></li>
+        <li><a href="#"><i class="ion-social-instagram social-icons"></i></a></li>
+      </ul>
+  </footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+<!-- <script sr="js/mapDirective.js"></script> -->
+<script src="js/logo-directive.js"></script>
+<script async defer src="js/initMap.js"></script>
+<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Yy_kapoK3i7k87XZmvEoaEGjrUeUzME&callback=initMap">
+</script>
+
+</body>
+</html>

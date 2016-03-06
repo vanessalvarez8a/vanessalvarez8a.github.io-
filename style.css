@@ -1,0 +1,290 @@
+/*Orange #EEAD50*/
+/*Blue #4EC1C7;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+.section-features {
+  padding-bottom: 40px;
+}
+/*//////////// PARAGRAPHS ////////*/
+
+.long-copy {
+  line-height: 145%;
+  width: 80%;
+  margin-left: 10%;
+  color: #66666C;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+  color: #66666C;
+}
+
+/*//////////// ICONS ////////*/
+
+.icon-big {
+  color: #F37B63;
+  display: block;
+  font-size: 350%;
+}
+
+
+
+/*//////////// HEADINGS ////////////*/
+header {
+  background-image: url(images/header.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 250%;
+  font-weight: normal;
+  /*font-style: italic;*/
+}
+
+h3 {
+  font-size: 120%;
+  margin-bottom: 15px;
+  color: #4EC1C7;
+  /*font-weight: bold;*/
+
+
+}
+
+.header-box {
+  position: absolute;
+  width: 1140px;
+  top: 40%;
+  left: 8%;
+}
+
+/*/////  BUTTONS!!  /////*/
+
+.btn:link,
+.btn:visited {
+  padding: 10px 40px;
+  font-weight: 300;
+  /*font-family: 'Quicksand', sans-serif;*/
+  background-color: #F37B63;
+  border-radius: 300px;
+  color: white;
+  border: 1px solid #F37B63;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 110%;
+  /*font-weight: bold;*/
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #4EC1C7;
+  border: #4EC1C7;
+}
+
+/*////////// NAVIGATION //////////*/
+
+nav {
+  height: 200px;
+  background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(1,1,1,0));
+
+}
+
+.logo {
+  height: 190px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+  /*margin-left: 30px;*/
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #F37B63;
+  font-size: 115%;
+  font-weight: bold;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #4EC1C7;
+}
+
+
+/*//////// PETS IMAGES //////////////*/
+
+.pets-box {
+  list-style: none;
+  width: 100%;
+}
+
+.pets-box li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.pets-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  /*This green is the one behind the picture*/
+  background-color: #4EC1C7;
+}
+
+.pets-photo img {
+  width: 100%;
+  height: auto;
+  /*This transform will make the image bigger BUT will make it go outside of the view so make that scrolling the overflow hidden above is how to fix it*/
+  transform: scale(1.15);
+  transition: transform 0.5s;
+  /*This opacity is 70%*/
+  opacity: 0.9;
+}
+
+/*This transform will make the hover of the image and to avoid the white lines you fix it with the 1.04*/
+.pets-photo img:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+/* Below is the padding for the section of the dogs images */
+.section-pets {
+  padding: 0;
+}
+
+/*///////// PRICING ///////*/
+
+.pricing {
+  background-color: #f4f4f4;
+  /*padding-top: 20%;*/
+}
+
+.pricing-box {
+  background-color: white;
+  border-radius: 5px;
+  /* IU DONT want it to be 100% from the parent wich is col the parent of this*/
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 40px;
+}
+
+.pricing-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  /*line-height: 60px;*/
+}
+
+.pricing-box div {
+
+}
+
+.boarding-price {
+  font-size: 150%;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #F37B63;
+
+}
+
+.pricing-box ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.pricing-box li {
+  padding: 5px 0;
+}
+
+.check {
+  color: #4EC1C7;
+}
+
+span {
+  font-size: 70%;
+}
+
+/*///////// FOOTER ///////*/
+
+footer {
+  background-color: #4EC1C7;
+  /*padding-top: 50px;*/
+
+}
+
+.social-links {
+  /*display: inline-block;*/
+  list-style: none;
+  text-align: center;
+}
+.social-links li {
+  display: inline-block;
+  padding: 30px 0;
+}
+
+.social-icons {
+  text-align: center;
+  list-style: none;
+  color: white;
+  font-size: 250%;
+  margin-right: 20px;
+  /*margin-top: 100px; */
+
+}
+
+
+
+/*////// Google Map//////*/
+
+#map {
+  height: 400px;
+  width: 100px;
+  border: 2px solid red;
+}
