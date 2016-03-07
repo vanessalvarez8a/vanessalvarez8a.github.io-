@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="nav-two">
+        <logo-directive ui-sref="home"></logo-directive>
+      <ul class="main-nav">
+        <li><a ui-sref="reservations">Check In</a></li>
+        <!-- <li><a href="#">Testimonials</a></li> -->
+        <li><a ui-sref="contactUs">Contact Us</a></li>
+      </ul>
+  </div>
+</div>
+
+
+
+<div class="section-form">
+  <div class="row">
+    <i class="ion-email"></i>
+    <h2>We're happy to hear from you!</h2>
+  </div>
+  <div class="row">
+    <form method="post" action="#" class="contact-form">
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="name">Name</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="text" name="name" id="name" placeholder="Your name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="pets-name">Furry friend name:</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="text" name="name" id="pets-name" placeholder="Pets name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="email">Email</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="rate-us">How was your experience with us?</label>
+            </div>
+            <div class="col span-2-of-3">
+              <select name="rate-us" id="rate-us">
+                  <option value="excellent" selected> Excellent </option>
+                  <option value="good"> Good </option>
+                  <option value="good"> Poor </option>
+              </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label for="message">Drop us a line</label>
+            </div>
+            <div class="col span-2-of-3">
+              <textarea name="message" id="message" placeholder="Your message"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-3">
+              <label>&nbsp;</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input type="submit" value="Send it!">
+            </div>
+        </div>
+
+    </form>
+  </div>
+</div>

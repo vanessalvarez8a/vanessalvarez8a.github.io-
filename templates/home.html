@@ -1,18 +1,18 @@
-<div class="header-box">
-  <h1>Furry Boarding for</br> Dogs & cats</h1>
-  <a class="btn" ui-sref="reservations">Book Now!</a>
-</div>
 <header>
   <nav>
-    <div class="row">
-      <logo-directive></logo-directive>
-    <ul class="main-nav">
-      <li><a href="#">Our Services</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
+      <div class="row">
+      <logo-directive ui-sref="home"></logo-directive>
+      <ul class="main-nav">
+        <li><a ui-sref="reservations">Check In</a></li>
+        <!-- <li><a href="#">Testimonials</a></li> -->
+        <li><a ui-sref="contactUs" class="hover-transition">Contact Us</a></li>
+      </ul>
+    </div>
   </nav>
+  <div class="header-box">
+    <h1>Furry Boarding for</br> Dogs & cats</h1>
+    <a class="btn" ui-sref="reservations">Book Now!</a>
+  </div>
   </header>
 
 <section class="section-features">
@@ -95,9 +95,9 @@
 </section>
 
 <section class="pricing">
-<div class="row">
+<!-- <div class="row"> -->
   <!-- <h2>Prices</h2> -->
-</div>
+<!-- </div> -->
 <div class="row">
   <div class="col span-1-of-4">
     <div class="pricing-box">
@@ -158,9 +158,12 @@
 </section>
 
 
-<section>
+<section class="map-location">
+
 <div class="row">
-  <!-- <my-maps id="map"></my-maps> -->
-  <div id="map"></div>
+    <i class="ion-ios-location"></i>
+    <h2>Location</h2>
+    <div id="map">
+    </div>
 </div>
 </section>

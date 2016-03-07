@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap Calendar -->
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="//mattlewis92.github.io/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
+  <!--  -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="Grid.css">
   <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
@@ -11,8 +15,18 @@
 </head>
 <body>
 
-    <div ui-view></div>
+  <div ui-view></div>
 
+
+  <section class="map-location">
+
+  <div class="row">
+      <i class="ion-ios-location"></i>
+      <h2>Location</h2>
+      <div id="map">
+      </div>
+  </div>
+  </section>
 
   <footer>
     <div class="row">
@@ -27,13 +41,29 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+<!--Bootstrap Calendar  -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.4/interact.min.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+<script src="//mattlewis92.github.io/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.min.js"></script>
+
+
 <script src="js/app.js"></script>
-<!-- <script sr="js/mapDirective.js"></script> -->
-<script src="js/logo-directive.js"></script>
-<script async defer src="js/initMap.js"></script>
+<script src="js/mapController.js"></script>
+<!-- <script async defer src="js/initMap.js"></script> -->
+<!-- <script src="js/initMap.js"></script> -->
+
 <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Yy_kapoK3i7k87XZmvEoaEGjrUeUzME&callback=initMap">
 </script>
+
+<!-- Bootstrap Calendar -->
+<script src="js/example.js"></script>
+<script src="js/helpers.js"></script>
+
+<script src="js/logo-directive.js"></script>
+
 
 </body>
 </html>
