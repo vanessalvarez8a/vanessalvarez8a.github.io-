@@ -1,5 +1,5 @@
-// window.initMap = function() {
 function initMap() {
+// function initMap() {
   var mapDiv = document.getElementById('map');
   var myLatlng = new google.maps.LatLng(25.773491,-80.231337);
   var map = new google.maps.Map(mapDiv, {

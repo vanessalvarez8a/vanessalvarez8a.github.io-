@@ -1,4 +1,4 @@
-angular.module('furryInnApp', ['ui.router', 'mwl.calendar', 'ngAnimate', 'ui.bootstrap']);
+angular.module('furryInnApp', ['ui.router', 'firebase']);
 
 
 angular.module('furryInnApp')
@@ -7,7 +7,7 @@ angular.module('furryInnApp')
 	.state('home', {
 		url: '/',
 		templateUrl: 'templates/home.html',
-		controller: 'mapController'
+		// controller: 'mapController'
 		// resolve: {
 		// 	test: function() {
 		// 		setTimeout(function(){
@@ -18,12 +18,14 @@ angular.module('furryInnApp')
 	})
   .state('reservations', {
   url: '/reservations',
-  templateUrl: '/templates/reservations.html'
+  templateUrl: '/templates/reservations.html',
+	controller: 'bookNowCtrl'
 })
 
 .state('contactUs', {
 url: '/contactUs',
-templateUrl: '/templates/contactUs.html'
+templateUrl: '/templates/contactUs.html',
+controller: 'inputController'
 });
 	$urlRouterProvider.otherwise('/');
 
